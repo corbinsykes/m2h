@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/static/css/reset.css">
+ <!--  <link rel="stylesheet" href="/static/css/skeleton.css"> -->
+  <link rel="stylesheet" href="/static/css/new.css">
+  <script src="/static/js/jquery.js"></script>
+  <script src="/static/js/stellar.js"></script>
+  <script src="/static/js/index.js"></script>
+</head>
+
+<body>
+<!--==============================
+              header
+=================================-->
+<div class="bHeader">
+  <div class="container">
+    <a class="bHeader__logo" href="/"></a>
+    <a class="bHeader__navItem"></a>
+    <a class="bHeader__navItem uppercase" href="/users/service">what we offer</a>
+    <a class="bHeader__navItem uppercase" href="/users/menu">menu</a>
+    <a class="bHeader__navItem uppercase" href="/users/sources">sources</a>
+    <a class="bHeader__navItem uppercase" href="/users/about">our story</a>
+    <a class="bHeader__navItem uppercase" href="/users/contact">contact us</a>
+    <a class="bHeader__navItem uppercase" href="/users/auth">get started</a>
+  </div>
+</div>
+<!--=====================
+          Content
+======================-->
+<article class="pContact">
+  <section class="bSplash">
+    <div class="bSplash__background" data-stellar-background-ratio="0.3"></div>
+    <div class="bSplash__overlay" data-stellar-background-ratio="0.3"></div>
+    <div class="bSplash__content" data-stellar-ratio="0.5">
+      <h1 class="bSplash__header">Contact <span class="font-w-bold">Us</span></h1>
+    </div>
+  </section>
+
+  <section class="bContent__section">
+    <div class="container">
+      <h1 class="bContent__p font-w-bold">meals to heal</h1>
+      <p class="bContent__p">
+        Address Line 1</br>
+        Address Line 2</br>
+        Brooklyn, NY 11xxx
+      </p>
+    </div>
+  </section>
+  <iframe class="pContact__map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d48385.475206267576!2d-74.0020784011152!3d40.71598676241902!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1421781266239" style="border:0"></iframe>
+</article>
+<!--==============================
+              footer
+=================================-->
+
+<a href="#" id="toTop" class="fa fa-chevron-up"></a>
+<script src="/static/js/jquery.singlePageNav.min.js"></script>
+<script>
+
+    // Prevent console.log from generating errors in IE for the purposes of the demo
+    if ( ! window.console ) console = { log: function(){} };
+
+    // The actual plugin
+    $('.single-page-nav').singlePageNav({
+        offset: $('.single-page-nav').outerHeight(),
+        filter: ':not(.external)',
+        updateHash: true,
+        beforeStart: function() {
+            console.log('begin scrolling');
+        },
+        onComplete: function() {
+            console.log('done scrolling');
+        }
+    });
+</script>
+
+
+
+
+
+</body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K269DB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K269DB');</script>
+<!-- End Google Tag Manager -->
+</html>

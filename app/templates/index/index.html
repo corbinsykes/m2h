@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/static/css/reset.css">
+ <!--  <link rel="stylesheet" href="/static/css/skeleton.css"> -->
+  <link rel="stylesheet" href="/static/css/new.css">
+  <script src="/static/js/jquery.js"></script>
+</head>
+
+<body>
+<!--==============================
+              header
+=================================-->
+<div class="bHeader">
+  <div class="container">
+    <a class="bHeader__logo" href="/"></a>
+    <a class="bHeader__navItem"></a>
+    <a class="bHeader__navItem uppercase" href="/users/service">what we offer</a>
+    <a class="bHeader__navItem uppercase" href="/users/menu">menu</a>
+    <a class="bHeader__navItem uppercase" href="/users/sources">sources</a>
+    <a class="bHeader__navItem uppercase" href="/users/about">our story</a>
+    <a class="bHeader__navItem uppercase" href="/users/contact">contact us</a>
+    <a class="bHeader__navItem uppercase" href="/users/auth">get started</a>
+  </div>
+</div>
+<!--=====================
+          Content
+======================-->
+<article class="pIndex">
+  <section class="bSplash">
+    <div class="bSplash__background"></div>
+    <div class="bSplash__overlay"></div>
+    <div class="bSplash__content">
+      <h1 class="bSplash__header">meals <span class="font-w-bold">to heal</span></h1>
+      <h2 class="bSplash__subheader">a <span class="font-w-bold">brooklyn-based</span> food company.</h2>
+      <a href="/users/auth">
+        <button class="btn_pill btn_white">Get started</button>
+      </a>
+    </div>
+  </section>
+</article>
+<!--==============================
+              footer
+=================================-->
+
+<a href="#" id="toTop" class="fa fa-chevron-up"></a>
+<script src="/static/js/jquery.singlePageNav.min.js"></script>
+<script>
+
+    // Prevent console.log from generating errors in IE for the purposes of the demo
+    if ( ! window.console ) console = { log: function(){} };
+
+    // The actual plugin
+    $('.single-page-nav').singlePageNav({
+        offset: $('.single-page-nav').outerHeight(),
+        filter: ':not(.external)',
+        updateHash: true,
+        beforeStart: function() {
+            console.log('begin scrolling');
+        },
+        onComplete: function() {
+            console.log('done scrolling');
+        }
+    });
+</script>
+
+
+
+
+
+</body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K269DB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K269DB');</script>
+<!-- End Google Tag Manager -->
+</html>
